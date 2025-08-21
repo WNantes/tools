@@ -258,6 +258,113 @@
          </tbody>
       </table>
       <br>
+	   <!-- 
+	   :: ATIVACAO DO WINDOWS E OFFICE (No PowerShell como admin)
+
+irm https://massgrave.dev/get | iex   
+
+irm https://get.activated.win | iex
+
+:: DEBLOTAWARE (No PowerShell como admin)
+
+iwr -useb https://git.io/debloat | iex
+
+:: ATIVAR MODO DESEMPENHO MAXIMO (CMD admin)
+
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+Painel de controle - Opções de energia - Escolha o modo “Desempenho Máximo”
+
+:: DESATIVAR WINDOWS DEFENDER
+Reboot into safe mode and run this command:
+
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend" /v "DependOnService" /t REG_MULTI_SZ /d "RpcSs-DISABLED" /f
+
+:: CHAVES PRO:
+JVNGW-MRRWT-DKDJ4-7WR4K-YDWXG
+N24DD-FGXK3-2RWYX-6D87B-HT672
+VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+:: DESATIVAR WINDOWS SEARCH (Executar como ADMIN)
+services.msc
+
+windows search
+parar
+desativar
+
+:: DESATIVAR APPS EM SEGUNDO PLANO NO Windows 11 Pro (Executar como ADMIN)
+
+gpedit.msc
+
+Configuração do Computador 
+Modelos Administrativos
+Componentes do Windows
+Privacidade do Aplicativo.
+
+"Permitir que aplicativos do Windows sejam executados em segundo plano"
+
+Selecione "Habilitado"
+
+Em "Padrão para todos os aplicativos", escolha "FORÇAR NEGAR"
+
+Clique em aplicar e depois em ok.
+
+:: DESATIVAR NOTIFICACOES E REMOVER ICONE (Executar como ADMIN)
+
+gpedit.msc
+
+Modelos Administrativos
+Menu Iniciar e Barra de Tarefas
+Remover a Central de Acoes e Notificacoes
+HABILITADO
+Aplicar
+OK
+
+Reinicie o PC.
+
+FONTE: https://www.reddit.com/r/Windows11/comments/1d6nrhq/is_there_a_less_painful_way_to_identify_and_turn/?tl=pt-br&rdt=50126
+
+:: RECUPERAR MENU DIREITO CLASSICO 
+reg add "HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /ve /f
+reg add "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb5}\InprocServer32" /f /ve
+taskkill /f /im explorer.exe
+start explorer.exe
+
+:: RESTAURAR MENU DIREITO PADRAO Win 11
+reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
+reg.exe delete "HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb5}" /f
+taskkill /f /im explorer.exe
+start explorer.exe
+
+:: WINDOWSA SERVER EVALUTION PARA FULL
+
+Excecutar o CMD como administrador e rodar ios seguintes comandos:
+
+DISM /online /Get-CurrentEdition
+
+DISM /online /Get-TargetEditions
+
+DISM /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula
+
+Keys:
+W269N-WFGWX-YVC9B-4J6C9-T83GX
+TVRH6-WHNXV-R9WG3-9XRFY-MY832
+
+:: DISKPART
+CMD (ADMIN)
+diskpart
+list disk : Lista todos os discos conectados ao computador. 
+select disk <número> : Seleciona o disco desejado para as próximas operações. 
+list partition : Lista as partições existentes no disco selecionado. 
+select partition <número> : Seleciona a partição desejada. 
+create partition primary : Cria uma nova partição primária. 
+format fs=ntfs quick : Formata a partição selecionada com o sistema de arquivos NTFS (formatação rápida). 
+ou
+format fs=fat32 quick : Formata a partição selecionada com o sistema de arquivos NTFS (formatação rápida).
+assign letter=<letra> : Atribui uma letra de unidade à partição selecionada. 
+clean : Remove todas as partições e dados do disco selecionado. 
+exit : Sai do DiskPart. 
+	   -->
       <br>
    </body>
 </html>
