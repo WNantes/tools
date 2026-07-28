@@ -1,282 +1,323 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-   <head>
-      <link rel="icon" type="image/ico" href="http://www.google.com/s2/favicons?domain=google.com">
-      <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-      <title>Downloads</title>
-   </head>
-   <body>
-      <table style="text-align: left; width: 100%; font-family: Arial; font-size: 12px;" border="0" cellpadding="2" cellspacing="2">
-         <tbody>
-            <tr>
-               <td colspan="3" rowspan="1" style="vertical-align: top;">
-				<center>
-					<form id="google-search-form" action="https://www.google.com/search" method="get" target="_blank">
-						<input align="center" style="width: 50%" type="search" id="google-search-input" name="q" placeholder="Pesquisar no Google">
-						<button type="submit">Google</button>
+<head>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+	<link rel="icon" type="image/ico" href="http://www.google.com/s2/favicons?domain=google.com">
+	<title>Downloads</title>
+</head>
+<body>
+	<table style="text-align: left; width: 100%; font-family: Arial; font-size: 12px;" border="0" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td colspan="3" style="vertical-align: top; text-align: center;">
+					<form id="google-search-form" action="https://www.google.com/search" method="get" target="_blank" rel="noreferrer noopener nofollow">
+						<input style="width: 50%;" type="search" id="google-search-input" name="q" placeholder="Pesquisar no Google">
+						<button type="submit">Buscar</button>
 					</form> 
-					<form id="duck-search-form" action="https://duckduckgo.com" method="get" target="_blank">
-						<input align="center" style="width: 51%" type="search" id="duck-search-input" name="q" placeholder="Pesquisar no DuckDuckGO">
-						<button type="submit">Duck</button>
+					<form id="duck-search-form" action="https://duckduckgo.com" method="get" target="_blank" rel="noreferrer noopener nofollow">
+						<input style="width: 50%;" type="search" id="duck-search-input" name="q" placeholder="Pesquisar no DuckDuckGO">
+						<button type="submit">Buscar</button>
 					</form> 
-					<form id="startpage-search-form" action="https://www.startpage.com" method="get" target="_blank">
-						<input align="center" style="width: 49%" type="search" id="startpage-search-input" name="q" placeholder="Pesquisa StartPage">
-						<button type="submit">StartPage</button>
+					<form id="startpage-search-form" action="https://www.startpage.com" method="get" target="_blank" rel="noreferrer noopener nofollow">
+						<input style="width: 50%;" type="search" id="startpage-search-input" name="q" placeholder="Pesquisa StartPage">
+						<button type="submit">Buscar</button>
 					</form>
-				</center>
+					<form id="searchForm" class="search-box">
+						<input style="width: 50%;" type="text" id="searchInput" placeholder="Buscar no AlternativeTo">
+						<button type="submit">Buscar</button>
+					</form>
+  <script>
+    document
+      .getElementById("searchForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const query = document
+          .getElementById("searchInput")
+          .value
+          .trim();
+
+        if (!query) return;
+
+        // URL de busca
+        const url =
+          "https://alternativeto.net/browse/search/?q=" +
+          encodeURIComponent(query);
+
+        // Abre nova aba
+        window.open(url, "_blank");
+      });
+  </script>
 				</td>
 			</tr>
-            <tr>
-               <td style="vertical-align: top; width: 349px;">
-				  <!-- Obter o favicon = <li><img src="http://www.google.com/s2/favicons?domain=alternativeto.net"> - <a href="... -->
-                  <ul>
-                     <li><img src="http://www.google.com/s2/favicons?domain=alternativeto.net"> - <a href="https://alternativeto.net/" target="_blank">AlternativeTo</a></li>
-                     <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://www.google.com/" target="_blank">Google Search</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=duckduckgo.com"> - <a href="https://duckduckgo.com/" target="_blank">Duck Search</a></li>
-                     <br>
-                     <li><img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_16dp.png"> - <a href="https://drive.google.com/drive/folders/1uCs31wmXun5r8jGeEnzBSzKkzJnJ21s2?usp=sharing" target="_blank">Downloads</a></li>
-					 <li><img src="https://img.icons8.com/?size=48&id=30655&format=png" width="16" height="16"> - <a href="https://keep.google.com/#home" target="_blank">Keep</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=whatsapp.com"> - <a href="https://github.com/oOthkOo/whatsapp-desktop/releases" target="_blank">WhatsApp Desktop (Git)</a></li>
-					 <br>
-					 <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/" target="_blank"><i>Chrome Web Store</i></a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/change-case/lpakoahdokkkonadfppfgmednkknpgbm" target="_blank">Alterar CAPSLOCK</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/auto-tab-discard-suspend/jhnleheckmknfcgijgkadoemagpecfol" target="_blank">Auto Tab Discard</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge" target="_blank">DownThemAll</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/hide-google-ai-overviews/neibhohkbmfjninidnaoacabkjonbahn?hl=en" target="_blank">Esconde AI </a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/google-keep-chrome-extens/lpcaedmchfhocbbapmcbpinfpgnhiddi" target="_blank">Google Keep</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/new-tab-positioner/bmlonnbnggklnaoeienlhfmbcbkpakoa" target="_blank">New Tab Positioner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/passwordviewer-password-r/ohahnaoiiemjagdndajfmjnfpbpdomoi" target="_blank">PassWordView</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/startpage-%E2%80%94-private-searc/fgmjlmbojbkmdpofahffgcpkhkngfpef" target="_blank">Startpage</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/snap-links/oiecdldkjdkgglinbjniehljnacikmfd" target="_blank">Snap Links (MultiLinks Openner)</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/undo-closed-tabs-20/cfcfmcnjnfhnimdbiodmalbdehbppbeo" target="_blank">Undo Closeed Tabs</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=pt-BR" target="_blank">uBlock Origin Lite</a></li>
-                     <br>
-					 <!-- 
-					 <li><img src="http://www.google.com/s2/favicons?domain=maphub.net"> - <a href="https://maphub.net/wrodrigues/iagro-preventivas" target="_blank">Map Hub - IAGRO Preventivas</a></li>
-                     <br>
-					 -->
-                     <li><img src="http://www.google.com/s2/favicons?domain=gerencialinfo.com.br"> - <a href="https://albatroz.gerencialinformatica.com/" target="_blank">Albatroz</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gerencialinfo.com.br"> - <a href="http://10.1.90.171/mapagerencial/login" target="_blank">INTERNO Mapa Gerencial</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gerencialinfo.com.br"> - <a href="http://a1.gerencialinfo.com.br:8085/mapagerencial/login" target="_blank">Mapa Gerencial</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gerencialinfo.com.br"> - <a href="https://webmail-seguro.com.br/v2/gerencial.net.br" target="_blank">WEBMail Gerencial</a></li>
-					 <br> 
-                     <li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/" target="_blank">PM Homepage</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/download.shtml" target="_blank">PM Downloads</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/download.shtml#Portable_versions" target="_blank">PM Portable</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="https://addons.palemoon.org/extensions/?all=1" target="_blank">PM Add-ons</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=eset.com"> - <a href="https://www.eset.com/br/suporte/sysinspector/#download" target="_blank">Eset SysInspector</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=emsisoft.com"> - <a href="https://www.emsisoft.com/en/home/emergency-kit/download/" target="_blank">Emsisoft Emergency Kit</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://massgrave.dev/" target="_blank">Massgrave.dev</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://massgrave.dev/genuine-installation-media#download-windows" target="_blank">Download Windows</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=pt-br&version=O16GA" target="_blank">Download Office_pt-BR</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://gitlab.com/-/project/11037551/uploads/f49f0d69e0aaf92e740a1f694d0438b9/OfficeScrubber_14.zip" target="_blank">Office Scrubber</a></li>
-					 .<p style="color:white; text-align:left">irm https://get.activated.win | iex</p>
-					 <br>
-					 <li><img src="http://www.google.com/s2/favicons?domain=gerencialinfo.com.br"> - </li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=kaspersky.com"> - <a href="http://rescuedisk.s.kaspersky-labs.com/latest/krd.iso" target="_blank">Kaspersky Rescue Disk</a> - <a href="http://www.kaspersky.com/free-virus-scan" target="_blank">Kaspersky Security Scan</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=trendmicro.com"> - <a href="http://www.trendmicro.com/pt_br/forHome/products/free-tools/rescue-disk.html" target="_blank">Trendmicro Rescue Disk</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=eset.com"> - <a href="https://www.eset.com/mm/support/sysrescue/" target="_blank">Eset SysRescue Live</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=bitdefender.com"> - <a href="http://download.bitdefender.com/rescue_cd/latest/bitdefender-rescue-cd.iso" target="_blank">BitDefender Rescue Disk</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=comodo.com"> - <a href="http://download.comodo.com/cce/download/setups/cce_public_x32.zip" target="_blank">Comodo Cleaning Essentials</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=mcafee.com"> - <a href="http://downloadcenter.mcafee.com/products/mcafee-avert/getsusp/getsusp.exe" target="_blank">McAfee GetSusp 32</a> - <a href="http://downloadcenter.mcafee.com/products/mcafee-avert/getsusp/getsusp64.exe" target="_blank">McAfee GetSusp 64</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=microsoft.com"> - <a href="http://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download" target="_blank">Microsoft Safety Scanner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=avira.com"> - <a href="http://install.avira-update.com/package/pccleanerwebloader/win32/en/avira_pc_cleaner_en.exe" target="_blank">Avira PC Cleaner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=hitmanpro.com"> - <a href="http://get.hitmanpro.com/" target="_blank">HitmanPro Trial</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=zemana.com"> - <a href="http://www.zemana.com/thank-you/download?source=download&amp;ProductID=2&amp;IsFree=False&amp;IsPortable=True" target="_blank">Zemana AntiMalware Trial Portable</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=norton.com"> - <a href="http://us.norton.com/support/tools/npe.html" target="_blank">Norton Power Eraser</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=clamav.net"> - <a href="http://sourceforge.net/projects/antiviruslivecd/files/" target="_blank">ClamAV Antivirus Live CD</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=avira.com"> - <a href="http://install.avira-update.com/package/rs_avira/unix/int/rescue-system.iso" target="_blank">Avira Rescue System</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=free.drweb.com"> - <a href="http://download.geo.drweb.com/pub/drweb/livedisk/drweb-livedisk-900-cd.iso" target="_blank">DRWeb Livedisk 900 CD</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=avg.com"> -   <a href="http://www.avg.com/us-en/avg-rescue-cd/" target="_blank">AVG Rescue CD</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=f-secure.com"> - <a href="http://www.softpedia.com/dyn-postdownload.php/f4434316a3d5f5fafabc83371fbe3cf1/5cc1b004/2a0b1/4/1" target="_blank">F-Secure Rescue CD</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=blank"> - </li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=cdimage.debian.org"> - <a href="http://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/" target="_blank">Debian Official "stable"</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=blank"> -</li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/filezilla_portable" target="_blank">Filezilla</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/kitty-portable" target="_blank">Kitty</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/putty_portable" target="_blank">Putty</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/winscp_portable" target="_blank">Winscp</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/hijackthis-portable" target="_blank">Hijackthis</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/kaspersky-tdsskiller-portable" target="_blank">Kaspersky Tdsskiller</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/mcafee-stinger-portable" target="_blank">Mcafee Stinger</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/2x_client_portable" target="_blank">2x Client</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/ant_renamer_portable" target="_blank">Ant Renamer</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/autoruns-portable" target="_blank">Autoruns</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/command_prompt_portable" target="_blank">Command Prompt</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/process-explorer-portable" target="_blank">Process Explorer</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/process-hacker-portable" target="_blank">Process Hacker</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/siw_portable" target="_blank">Siw</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/ssd-z-portable" target="_blank">Ssd Z</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/startup-sentinel-portable" target="_blank">Startup Sentinel</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/tcpview-portable" target="_blank">TCPview</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/windirstat_portable" target="_blank">Windirstat</a></li>
-                  </ul>
-               </td>
-               <td style="vertical-align: top; width: 532px;">
-                  <ul>
-                     <li><img src="http://www.google.com/s2/favicons?domain=google.com">- <a href="https://www.google.com/intl/pt-BR/chrome/?standalone=1" target="_blank">Chrome 64</a> | <a href="https://www.google.com/intl/pt-BR/chrome/?system=true&standalone=1&platform=win" target="_blank">Chrome 32</a></li>					
-                     <li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://download.mozilla.org/?product=firefox-latest-ssl&amp;os=win64&amp;lang=pt-BR" target="_blank">Firefox 64</a> | <a href="http://download.mozilla.org/?product=firefox-latest-ssl&amp;os=win&amp;lang=pt-BR" target="_blank">Firefox 32</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=7-zip.org"> - <a href="https://7-zip.org/" target="_blank">7-Zip</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=javadl.oracle.com"> - <a href="http://www.java.com/pt-BR/download/manual.jsp" target="_blank">Java 64 e 32</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=tools.pdf24.org"> - <a href="https://tools.pdf24.org/pt/creator" target="_blank">PDF24</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=download.pdfforge.org"> - <a href="http://download.pdfforge.org/download/pdfcreator/PDFCreator-stable?download" target="_blank">PDF Creator</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=bcuninstaller.com"> - <a href="http://github.com/Klocman/Bulk-Crap-Uninstaller/releases" target="_blank">Bulk Crap Uninstaller</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=hwinfo.com"> - <a href="http://www.hwinfo.com/download/" target="_blank">HWInfo</a></li>
-                     <li><img src="https://a1ive.github.io/nwinfo/docs/images/icon.ico" width="16" height="16"> - <a href="https://a1ive.github.io/nwinfo/" target="_blank">GNWInfo</a> | <a href="https://github.com/a1ive/nwinfo/releases/latest/download/nwinfo.zip" target="_blank">GNWInfo.zip</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=dwservice.net"> - <a href="https://www.dwservice.net/pt_BR/download.html" target="_blank">DWService</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=rustdesk.com"> - <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank">RustDesk - Releases</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=radmin-vpn.com"> - <a href="https://www.radmin-vpn.com/br/" target="_blank">RAdmin_VPN</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=anydesk.pt"> - <a href="http://download.anydesk.com/AnyDesk.exe" target="_blank">AnyDesk - Windows</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=hoptodesk.com"> - <a href="https://download.hoptodesk.com/HopToDesk.exe" target="_blank">HopToDesk - Windows</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=avast.com"> - <a href="http://www.avast.com/pt-br/download-thank-you.php?product=FAV-OFFLINE&amp;locale=pt-br" target="_blank">Avast OFFLINE</a> - <a href="https://www.avast.com/pt-br/installation-files#pc" target="_blank">Avast Todos OFFLINE</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=chromium.woolyss.com"> - <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit" target="_blank">Ungoogled-ChromiumChromium 64</a> | <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/32bit" target="_blank">Ungoogled-Chromium 32</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=chromium.woolyss.com"> - <a href="https://chromium.woolyss.com/download/" target="_blank">Chromium</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=ventoy.net"> - <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=cutepdf.com"> - <a href="https://www.cutepdf.com/download/CuteWriter.exe" target="_blank">CutePDF Writer</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=greatis.com"> - <a href="https://www.greatissoftware.com/stopupdates10.zip" target="_blank">StopUpdates10</a></li>					 
-                     <li><img src="http://www.google.com/s2/favicons?domain=notepad-plus-plus.org"> - <a href="https://notepad-plus-plus.org/downloads/" target="_blank">NotePad++</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=copyhandler.com"> - <a href="http://www.copyhandler.com/download" target="_blank">CopyHandler</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sumatrapdfreader.org"> - <a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html" target="_blank">SumatraPDF</a> - <a href="http://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-64-install.exe" target="_blank">SumatraPDF 64</a> - <a href="http://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2.zip" target="_blank">SumatraPDF Portable 32</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=okular.kde.org"> - <a href="https://okular.kde.org/pt-br/download/" target="_blank">OkularPDF - Downloads</a> - <a href="https://cdn.kde.org/ci-builds/graphics/okular/master/windows/" target="_blank">Okular Windows</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=adobe.com"> - <a href="https://get.adobe.com/br/reader/" target="_blank">Acrobat Reader</a> - <a href="https://cdn.kde.org/ci-builds/graphics/okular/master/windows/" target="_blank">Okular Windows</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://ftp.mozilla.org/pub/firefox/" target="_blank">FireFox FTP Releases</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://www.mozilla.org/en-US/firefox/organizations/" target="_blank">FireFox ESR</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=voidtools.com"> - <a href="https://www.voidtools.com/" target="_blank">Everything</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=microsoft.com"> - <a href="http://go.microsoft.com/fwlink/?linkid=2108834&amp;Channel=Stable&amp;language=pt-br" target="_blank">Edge Chromium 64</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=bb.com.br"> - <a href="https://www14.bancobrasil.com.br/bbsmartcard/bb_modulo_assinatura_x64.exe" target="_blank">Modulo Assinatura BB</a> | <a href="https://cloud.gastecnologia.com.br/bb/downloads/diagnostico/DiagnosticoBB.exe" target="_blank">Modulo de Seguranca BB</a></li>
-                     <li><img src="http://internetbanking.caixa.gov.br/favicon.ico"> - <a href="http://imagem.caixa.gov.br/banner/fgr/iGBPCEFgb.exe" target="_blank">CAIXA Internet Explorer</a> | <a href="http://imagem.caixa.gov.br/banner/fgr/iGBPCEFwr.exe" target="_blank">CAIXA Chrome, Firefox, Opera</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=earth.google.com"> - <a href="https://support.google.com/earth/answer/168344?hl=pt-BR#zippy=%2Cdownload-a-google-earth-pro-direct-installer" target="_blank">Google Earth Pro</a></li>
-					 <br>
-					 <li><img src="http://www.google.com/s2/favicons?domain=decider.com"> - <a href="https://decider.com/" target="_blank">Decider</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=arstechnica.com"> - <a href="https://arstechnica.com/" target="_blank">ArsTechnica</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=acritica.net"> - <a href="http://www.acritica.net/ultimas-noticias/" target="_blank">A Critica</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=agazetanews.com.br"> - <a href="https://www.agazetanews.com.br/" target="_blank">AGazetaNews</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=agenciabrasil.ebc.com.br"> - <a href="https://agenciabrasil.ebc.com.br/" target="_blank">agenciabrasil.ebc.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=agorams.com.br"> - <a href="https://www.agorams.com.br/" target="_blank">agorams.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=bbc.com"> - <a href="https://www.bbc.com/portuguese" target="_blank">bbc.com</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=blank"> - <a href="https://oestadoonline.com.br/" target="_blank">O Estado Online</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=bol.uol.com.br"> - <a href="https://www.bol.uol.com.br/noticias/" target="_blank">bol.uol.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=brasildefato.com.br"> - <a href="https://www.brasildefato.com.br/" target="_blank">brasildefato.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=brasilparalelo.com.br"> - <a href="https://www.brasilparalelo.com.br/" target="_blank">brasilparalelo.com.br</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=campogrande.ms.gov.br"> - <a href="http://www.campogrande.ms.gov.br/cgnoticias/noticias/" target="_blank">Campo Grande</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=campograndenews.com.br"> - <a href="http://www.campograndenews.com.br/ultimas-noticias" target="_blank">Campo Grande News</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=campograndenoticias.com.br"> - <a href="https://www.campograndenoticias.com.br/" target="_blank">Campo Grande Noticias</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=capitalnews.com.br"> - <a href="http://www.capitalnews.com.br/ultimas-noticias" target="_blank">Capital News</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=cartacapital.com.br"> - <a href="https://www.cartacapital.com.br/" target="_blank">cartacapital.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=correiodoestado.com.br"> - <a href="https://correiodoestado.com.br/" target="_blank">correiodoestado.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=correiodoms.com.br"> - <a href="https://www.correiodoms.com.br/category/noticias/" target="_blank">Correio Do MS</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=diariomsnews.com.br"> - <a href="https://diariomsnews.com.br/" target="_blank">Diario MS News</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=enfoquems.com.br"> - <a href="http://www.enfoquems.com.br/ultimas-noticias/" target="_blank">Enfoque MS</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=estadao.com.br"> - <a href="https://www.estadao.com.br/" target="_blank">Estad o</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=extra.globo.com"> - <a href="https://extra.globo.com/" target="_blank">extra.globo.com</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=extranewsms.com.br"> - <a href="http://www.extranewsms.com.br/" target="_blank">Extra News MS</a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=exame.com"> - <a href="https://exame.com/" target="_blank">Exame</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=folhacg.com.br"> - <a href="http://www.folhacg.com.br/" target="_blank">Folha CG</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=g1.globo.com"> - <a href="http://g1.globo.com/" target="_blank">G1</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gazetadopantanal.com"> - <a href="https://gazetadopantanal.com/" target="_blank">Gazeta do Pantanal</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gazetadopovo.com.br"> - <a href="https://www.gazetadopovo.com.br/" target="_blank">gazetadopovo.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=globo.com"> - <a href="https://www.globo.com/" target="_blank">globo.com</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=hojemais.com.br"> - <a href="https://www.hojemais.com.br/campo-grande/noticias/1" target="_blank">Hoje Mais</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=infocoms.com.br"> - <a href="https://infocoms.com.br/noticias-cidades/41" target="_blank">In Foco MS</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=jd1noticias.com"> - <a href="http://www.jd1noticias.com/ultimas-noticias/" target="_blank">JD1 Noticias</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=jornaldoonibusms.com.br"> - <a href="https://jornaldoonibusms.com.br/" target="_blank">Jornal Do Onibus MS</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=jovempan.com.br"> - <a href="https://jovempan.com.br/noticias" target="_blank">JovemPan</a></li>
-                  </ul>
-               </td>
-               <td colspan="1" rowspan="1" style="vertical-align: top; width: 415px;">
-                  <ul>
-                     <li><img src="http://www.google.com/s2/favicons?domain=comss.ru"> - <a href="http://www.comss.ru/download/page.php?id=604" target="_blank">AV Uninstall Tools Pack</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=ccleaner.com"> - <a href="http://www.ccleaner.com/ccleaner/download/standard" target="_blank">CCleaner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=ccleaner.com"> - <a href="http://www.ccleaner.com/speccy/download/standard" target="_blank">Speccy</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=drp.su"> - <a href="http://download.drp.su/17-online/DriverPack-17-Online.exe" target="_blank">DriverPack OnLine</a></li>
-                     <li><img src="http://www.codecguide.com/mpc_logo.png" width="16" height="16"> - <a href="http://www.codecguide.com/download_k-lite_codec_pack_mega.htm" target="_blank">K-Lite Mega</a></li>
-                     <li><img src="http://www.codecguide.com/mpc_logo.png" width="16" height="16""> - <a href="http://www.codecguide.com/download_other.htm#videolan" target="_blank">VLC VideoLan</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=teamviewer.com"> - <a href="http://download.teamviewer.com/full" target="_blank">TeamViewer Full</a> - <a href="http://www.teamviewer.com/en/download/previous-versions/" target="_blank">TeamViewer Versoes Anteriores</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=cpuid.com"> - <a href="http://www.cpuid.com/softwares/cpu-z.html#version-history" target="_blank">CPU-Z</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=passmark.com"> - <a href="http://www.passmark.com/downloads/rammon.exe" target="_blank">RAMoon</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=safer-networking.org"> - <a href="http://portableapps.com/apps/security/spybot_portable" target="_blank">Spybot S&amp;D - Portable</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=malwarebytes.com"> - <a href="http://downloads.malwarebytes.com/file/adwcleaner" target="_blank">AdwCleaner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=crystalmark.info"> - <a href="http://crystalmark.info/en/download/#CrystalDiskInfo" target="_blank">CrystalDiskInfo</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=rcpsoft.net">- <a href="http://rcpsoft.net/pc-total-info/" target="_blank">PC Total Info</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=reddit.com"> - <a href="https://www.reddit.com/r/TronScript/comments/1d2sbp2/tron_v1207_20240528_remove_sophos_fix/?utm_source=reddit&utm_medium=usertext&utm_name=TronScript&utm_content=t5_34lku" target="_blank">Tron</a> | <a href="https://mirror.meamod.com/tron/" target="_blank">Mirror - Tron</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sysinternals.com"> - <a href="http://download.sysinternals.com/files/Autoruns.zip" target="_blank">Autoruns</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sordum.org">- <a href="http://www.sordum.org/downloads/?st-fix-print-spooler" target="_blank">Fix Print Spooler</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sordum.org">- <a href="http://www.sordum.org/downloads/?st-defender-control" target="_blank">Defender Control</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=rufus.ie"> - <a href="http://rufus.ie/" target="_blank">Rufus</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=windows-repair-toolbox.com"> - <a href="http://windows-repair-toolbox.com/download/click.php?id=Windows_Repair_Toolbox" target="_blank">Windows Repair Toolbox</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=tcpipmanager.sourceforge.net"> - <a href="http://tcpipmanager.sourceforge.net/download.html" target="_blank">TCP_IP_Manager</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=advanced-ip-scanner.com"> - <a href="http://www.advanced-ip-scanner.com/br/" target="_blank">Advanced-ip-scanner</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=irfanview.com"> - <a href="http://download.cnet.com/IrfanView/?part=dl-&amp;subj=dl&amp;tag=button" target="_blank">IrfanView 32</a> - <a href="http://download.cnet.com/IrfanView-64-bit/3000-2192_4-76444710.html?part=dl-&amp;subj=dl&amp;tag=button" target="_blank">IrfanView 64</a> - <a href="http://www.irfanview.net/lang/irfanview_lang_portuguese.exe" target="_blank">IrfanView pt-BR</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=privazer.com"> - <a href="http://privazer.com/PrivaZer.exe" target="_blank">PrivaZer</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/ConditionalException/Windows10Privacy/releases" target="_blank">Windows 10 Privacy Utility - 24/02/19</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/ElPumpo/Win10Clean/releases" target="_blank">Win10Clean v1.0.0 - <b><i>05/02/21</i></b></a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/hellzerg/optimizer/releases" target="_blank">Windows 10 Optmizer 10.0 - <b><i>14/09/21</i></b></a></li>
-					 <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=midiamax.com.br"> - <a href="https://midiamax.com.br/" target="_blank">Midiamax</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=midianewscampogrande.com.br"> - <a href="https://midianewscampogrande.com.br/index.php/ultimas-noticias/" target="_blank">Midia News Campo Grande</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=msemfoco.com.br"> - <a href="https://www.msemfoco.com.br/ultimas-noticias" target="_blank">MS Em Foco</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=msnoticias.com.br"> - <a href="http://www.msnoticias.com.br/ultimas-noticias/" target="_blank">MS Noticias</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=news.google.com"> - <a href="https://news.google.com/" target="_blank">news.google.com</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=noticias.r7.com"> - <a href="https://noticias.r7.com/" target="_blank">R7</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=odia.ig.com.br"> - <a href="https://odia.ig.com.br/" target="_blank">odia.ig.com.br</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=perfilnews.com.br"> - <a href="http://www.perfilnews.com.br/" target="_blank">Perfil News</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=cnnbrasil.com.br"> - <a href="https://www.cnnbrasil.com.br/" target="_blank">CNN Brasil</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=iclnoticias.com.br"> - <a href="https://iclnoticias.com.br/" target="_blank">ICL Noticias</a></li>
-                     <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=progresso.com.br"> - <a href="https://www.progresso.com.br/" target="_blank">progresso.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=rcn67.com.br"> - <a href="http://www.rcn67.com.br/cbn/campo-grande/" target="_blank">Radio CBN - Campo Grande</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sonoticiaboa.com.br"> - <a href="https://www.sonoticiaboa.com.br/" target="_blank">sonoticiaboa.com.br</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=terra.com.br"> - <a href="http://www.terra.com.br/" target="_blank">Terra</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=topmidianews.com.br"> - <a href="http://www.topmidianews.com.br/ultimas-noticias/" target="_blank">Top Midia News</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=uol.com.br"> - <a href="http://www.uol.com.br/" target="_blank">UOL</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=veja.abril.com.br"> - <a href="https://veja.abril.com.br/" target="_blank">Veja</a></li>
-					 <li><img src="http://www.google.com/s2/favicons?domain=canaltech.com.br"> - <a href="http://canaltech.com.br/" target="_blank">Canal Tech</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=convergenciadigital.com.br"> - <a href="http://www.convergenciadigital.com.br/" target="_blank">Convergencia Digital</a></li>
-                     <br>
-                     <li><img src="http://www.google.com/s2/favicons?domain=gizmodo.uol.com.br"> - <a href="http://gizmodo.uol.com.br/" target="_blank">Gizmodo</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=sempreupdate.com.br"> - <a href="http://sempreupdate.com.br/" target="_blank">Sempre Updates</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=inovacaotecnologica.com.br"> - <a href="http://www.inovacaotecnologica.com.br/" target="_blank">Inovacao Tecnologica</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=mundoconectado.com.br"> - <a href="http://mundoconectado.com.br/" target="_blank">Mundo Conectado</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=edivaldobrito.com.br"> - <a href="http://www.edivaldobrito.com.br/" target="_blank">Edivaldo Brito</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=olhardigital.com.br"> - <a href="http://olhardigital.com.br/" target="_blank">Olhar Digital</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=techtudo.com.br"> - <a href="http://www.techtudo.com.br/" target="_blank">Tech Tudo</a></li>
-                     <li><img src="http://www.google.com/s2/favicons?domain=tecnoblog.net"> - <a href="http://tecnoblog.net/" target="_blank">Tecno Blog</a></li>
-                  </ul>
-               </td>
-            </tr>
-            <!-- 
-            <tr>
-               <td colspan="3" rowspan="1" style="vertical-align: top;">
-				<center>
-					<form id="google-search-form" action="https://www.google.com/search" method="get" target="_blank">
-						<input align="center" style="width: 50%" type="search" id="google-search-input" name="q" placeholder="Pesquisar no Google">
-						<button type="submit">Google</button>
-					</form> 
-					<form id="duck-search-form" action="https://duckduckgo.com" method="get" target="_blank">
-						<input align="center" style="width: 51%" type="search" id="duck-search-input" name="q" placeholder="Pesquisar no DuckDuckGO">
-						<button type="submit">Duck</button>
-					</form> 
-				</center>
+			<tr>
+				<td style="vertical-align: top; width: 349px;">
+					<ul>
+						<li><img src="http://www.google.com/s2/favicons?domain=alternativeto.net"> - <a href="https://alternativeto.net/" target="_blank" rel="noreferrer noopener nofollow">AlternativeTo</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://www.google.com/" target="_blank" rel="noreferrer noopener nofollow">Google Search</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=duckduckgo.com"> - <a href="https://duckduckgo.com/" target="_blank" rel="noreferrer noopener nofollow">Duck Search</a></li>
+						<br>
+						<li><img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_16dp.png"> - <a href="https://drive.google.com/drive/folders/1uCs31wmXun5r8jGeEnzBSzKkzJnJ21s2?usp=sharing" target="_blank" rel="noreferrer noopener nofollow">Downloads</a></li>
+						<li><img src="https://img.icons8.com/?size=48&id=30655&format=png" width="16" height="16"> - <a href="https://keep.google.com/#home" target="_blank" rel="noreferrer noopener nofollow">Keep</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=whatsapp.com"> - <a href="https://github.com/oOthkOo/whatsapp-desktop/releases" target="_blank" rel="noreferrer noopener nofollow">WhatsApp Desktop (Git)</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer noopener nofollow"><i>Chrome Web Store</i></a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/change-case/lpakoahdokkkonadfppfgmednkknpgbm" target="_blank" rel="noreferrer noopener nofollow">Alterar CAPSLOCK</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/auto-tab-discard-suspend/jhnleheckmknfcgijgkadoemagpecfol" target="_blank" rel="noreferrer noopener nofollow">Auto Tab Discard</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge" target="_blank" rel="noreferrer noopener nofollow">DownThemAll</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/hide-google-ai-overviews/neibhohkbmfjninidnaoacabkjonbahn?hl=en" target="_blank" rel="noreferrer noopener nofollow">Esconde AI</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/google-keep-chrome-extens/lpcaedmchfhocbbapmcbpinfpgnhiddi" target="_blank" rel="noreferrer noopener nofollow">Google Keep</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/new-tab-positioner/bmlonnbnggklnaoeienlhfmbcbkpakoa" target="_blank" rel="noreferrer noopener nofollow">New Tab Positioner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="noreferrer noopener nofollow">OneTab</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/passwordviewer-password-r/ohahnaoiiemjagdndajfmjnfpbpdomoi" target="_blank" rel="noreferrer noopener nofollow">PassWordView</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/page-plain-text/bephhamcfencdbjmlinkpapidliffpdg" target="_blank" rel="noreferrer noopener nofollow">Page Plain Text</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/startpage-%E2%80%94-private-searc/fgmjlmbojbkmdpofahffgcpkhkngfpef" target="_blank" rel="noreferrer noopener nofollow">Startpage</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/snap-links/oiecdldkjdkgglinbjniehljnacikmfd" target="_blank" rel="noreferrer noopener nofollow">Snap Links (MultiLinks Openner)</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/undo-closed-tabs-20/cfcfmcnjnfhnimdbiodmalbdehbppbeo" target="_blank" rel="noreferrer noopener nofollow">Undo Closeed Tabs</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=pt-BR" target="_blank" rel="noreferrer noopener nofollow">uBlock Origin Lite</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com"> - <a href="https://chromewebstore.google.com/detail/video-download-helper/lmjnegcaeklhafolokijcfjliaokphfk" target="_blank" rel="noreferrer noopener nofollow">Video Download Helper</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/" target="_blank" rel="noreferrer noopener nofollow">PM Homepage</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/download.shtml" target="_blank" rel="noreferrer noopener nofollow">PM Downloads</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="http://www.palemoon.org/download.shtml#Portable_versions" target="_blank" rel="noreferrer noopener nofollow">PM Portable</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=palemoon.org"> - <a href="https://addons.palemoon.org/extensions/?all=1" target="_blank" rel="noreferrer noopener nofollow">PM Add-ons</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=eset.com"> - <a href="https://www.eset.com/br/suporte/sysinspector/#download" target="_blank" rel="noreferrer noopener nofollow">Eset SysInspector</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=emsisoft.com"> - <a href="https://www.emsisoft.com/en/home/emergency-kit/download/" target="_blank" rel="noreferrer noopener nofollow">Emsisoft Emergency Kit</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://massgrave.dev/" target="_blank" rel="noreferrer noopener nofollow">Massgrave.dev</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://massgrave.dev/genuine-installation-media#download-windows" target="_blank" rel="noreferrer noopener nofollow">Download Windows</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=pt-br&version=O16GA" target="_blank" rel="noreferrer noopener nofollow">Download Office_pt-BR</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=massgrave.dev"> - <a href="https://gitlab.com/-/project/11037551/uploads/f49f0d69e0aaf92e740a1f694d0438b9/OfficeScrubber_14.zip" target="_blank" rel="noreferrer noopener nofollow">Office Scrubber</a></li>
+						<br>
+						<li style="list-style-type: none;"><p style="color:white; text-align:left; margin:0;">irm https://get.activated.win | iex</p></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=kaspersky.com"> - <a href="http://rescuedisk.s.kaspersky-labs.com/latest/krd.iso" target="_blank" rel="noreferrer noopener nofollow">Kaspersky Rescue Disk</a> - <a href="http://www.kaspersky.com/free-virus-scan" target="_blank" rel="noreferrer noopener nofollow">Kaspersky Security Scan</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=trendmicro.com"> - <a href="http://www.trendmicro.com/pt_br/forHome/products/free-tools/rescue-disk.html" target="_blank" rel="noreferrer noopener nofollow">Trendmicro Rescue Disk</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=eset.com"> - <a href="https://www.eset.com/mm/support/sysrescue/" target="_blank" rel="noreferrer noopener nofollow">Eset SysRescue Live</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=bitdefender.com"> - <a href="http://download.bitdefender.com/rescue_cd/latest/bitdefender-rescue-cd.iso" target="_blank" rel="noreferrer noopener nofollow">BitDefender Rescue Disk</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=comodo.com"> - <a href="http://download.comodo.com/cce/download/setups/cce_public_x32.zip" target="_blank" rel="noreferrer noopener nofollow">Comodo Cleaning Essentials</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=mcafee.com"> - <a href="http://downloadcenter.mcafee.com/products/mcafee-avert/getsusp/getsusp.exe" target="_blank" rel="noreferrer noopener nofollow">McAfee GetSusp 32</a> - <a href="http://downloadcenter.mcafee.com/products/mcafee-avert/getsusp/getsusp64.exe" target="_blank" rel="noreferrer noopener nofollow">McAfee GetSusp 64</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=microsoft.com"> - <a href="http://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download" target="_blank" rel="noreferrer noopener nofollow">Microsoft Safety Scanner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=avira.com"> - <a href="http://install.avira-update.com/package/pccleanerwebloader/win32/en/avira_pc_cleaner_en.exe" target="_blank" rel="noreferrer noopener nofollow">Avira PC Cleaner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=hitmanpro.com"> - <a href="http://get.hitmanpro.com/" target="_blank" rel="noreferrer noopener nofollow">HitmanPro Trial</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=zemana.com"> - <a href="http://www.zemana.com/thank-you/download?source=download&amp;ProductID=2&amp;IsFree=False&amp;IsPortable=True" target="_blank" rel="noreferrer noopener nofollow">Zemana AntiMalware Trial Portable</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=norton.com"> - <a href="http://us.norton.com/support/tools/npe.html" target="_blank" rel="noreferrer noopener nofollow">Norton Power Eraser</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=clamav.net"> - <a href="http://sourceforge.net/projects/antiviruslivecd/files/" target="_blank" rel="noreferrer noopener nofollow">ClamAV Antivirus Live CD</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=avira.com"> - <a href="http://install.avira-update.com/package/rs_avira/unix/int/rescue-system.iso" target="_blank" rel="noreferrer noopener nofollow">Avira Rescue System</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=free.drweb.com"> - <a href="http://download.geo.drweb.com/pub/drweb/livedisk/drweb-livedisk-900-cd.iso" target="_blank" rel="noreferrer noopener nofollow">DRWeb Livedisk 900 CD</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=avg.com"> - <a href="http://www.avg.com/us-en/avg-rescue-cd/" target="_blank" rel="noreferrer noopener nofollow">AVG Rescue CD</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=f-secure.com"> - <a href="http://www.softpedia.com/dyn-postdownload.php/f4434316a3d5f5fafabc83371fbe3cf1/5cc1b004/2a0b1/4/1" target="_blank" rel="noreferrer noopener nofollow">F-Secure Rescue CD</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=blank"> - </li>
+						<li><img src="http://www.google.com/s2/favicons?domain=cdimage.debian.org"> - <a href="http://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/" target="_blank" rel="noreferrer noopener nofollow">Debian Official "stable"</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=blank"> -</li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/filezilla_portable" target="_blank" rel="noreferrer noopener nofollow">Filezilla</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/kitty-portable" target="_blank" rel="noreferrer noopener nofollow">Kitty</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/putty_portable" target="_blank" rel="noreferrer noopener nofollow">Putty</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/internet/winscp_portable" target="_blank" rel="noreferrer noopener nofollow">Winscp</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/hijackthis-portable" target="_blank" rel="noreferrer noopener nofollow">Hijackthis</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/kaspersky-tdsskiller-portable" target="_blank" rel="noreferrer noopener nofollow">Kaspersky Tdsskiller</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/security/mcafee-stinger-portable" target="_blank" rel="noreferrer noopener nofollow">Mcafee Stinger</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/2x_client_portable" target="_blank" rel="noreferrer noopener nofollow">2x Client</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/ant_renamer_portable" target="_blank" rel="noreferrer noopener nofollow">Ant Renamer</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/autoruns-portable" target="_blank" rel="noreferrer noopener nofollow">Autoruns</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/command_prompt_portable" target="_blank" rel="noreferrer noopener nofollow">Command Prompt</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/process-explorer-portable" target="_blank" rel="noreferrer noopener nofollow">Process Explorer</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/process-hacker-portable" target="_blank" rel="noreferrer noopener nofollow">Process Hacker</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/siw_portable" target="_blank" rel="noreferrer noopener nofollow">Siw</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/ssd-z-portable" target="_blank" rel="noreferrer noopener nofollow">Ssd Z</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/startup-sentinel-portable" target="_blank" rel="noreferrer noopener nofollow">Startup Sentinel</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/tcpview-portable" target="_blank" rel="noreferrer noopener nofollow">TCPview</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=portableapps.com"> - <a href="http://portableapps.com/apps/utilities/windirstat_portable" target="_blank" rel="noreferrer noopener nofollow">Windirstat</a></li>
+					</ul>
+				</td>
+				<td style="vertical-align: top; width: 532px;">
+					<ul>
+						<li><img src="http://www.google.com/s2/favicons?domain=google.com">- <a href="https://www.google.com/intl/pt-BR/chrome/?standalone=1" target="_blank" rel="noreferrer noopener nofollow">Chrome 64</a> | <a href="https://www.google.com/intl/pt-BR/chrome/?system=true&standalone=1&platform=win" target="_blank" rel="noreferrer noopener nofollow">Chrome 32</a></li>					
+						<li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://download.mozilla.org/?product=firefox-latest-ssl&amp;os=win64&amp;lang=pt-BR" target="_blank" rel="noreferrer noopener nofollow">Firefox 64</a> | <a href="http://download.mozilla.org/?product=firefox-latest-ssl&amp;os=win&amp;lang=pt-BR" target="_blank" rel="noreferrer noopener nofollow">Firefox 32</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=7-zip.org"> - <a href="https://7-zip.org/" target="_blank" rel="noreferrer noopener nofollow">7-Zip</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=javadl.oracle.com"> - <a href="http://www.java.com/pt-BR/download/manual.jsp" target="_blank" rel="noreferrer noopener nofollow">Java 64 e 32</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=tools.pdf24.org"> - <a href="https://tools.pdf24.org/pt/creator" target="_blank" rel="noreferrer noopener nofollow">PDF24</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=download.pdfforge.org"> - <a href="http://download.pdfforge.org/download/pdfcreator/PDFCreator-stable?download" target="_blank" rel="noreferrer noopener nofollow">PDF Creator</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=bcuninstaller.com"> - <a href="http://github.com/Klocman/Bulk-Crap-Uninstaller/releases" target="_blank" rel="noreferrer noopener nofollow">Bulk Crap Uninstaller</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=hwinfo.com"> - <a href="http://www.hwinfo.com/download/" target="_blank" rel="noreferrer noopener nofollow">HWInfo</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=windirstat.net" width="16" height="16"> - <a href="https://windirstat.net/download.html" target="_blank" rel="noreferrer noopener nofollow">WinDirStat</a> | <a href="https://github.com/a1ive/nwinfo/releases/latest/download/nwinfo.zip" target="_blank" rel="noreferrer noopener nofollow">GNWInfo.zip</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=dwservice.net"> - <a href="https://www.dwservice.net/pt_BR/download.html" target="_blank" rel="noreferrer noopener nofollow">DWService</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=rustdesk.com"> - <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank" rel="noreferrer noopener nofollow">RustDesk - Releases</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=radmin-vpn.com"> - <a href="https://www.radmin-vpn.com/br/" target="_blank" rel="noreferrer noopener nofollow">RAdmin_VPN</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=advanced-ip-scanner.com"> - <a href="http://www.advanced-ip-scanner.com/br/" target="_blank" rel="noreferrer noopener nofollow">Advanced-ip-scanner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=anydesk.pt"> - <a href="http://download.anydesk.com/AnyDesk.exe" target="_blank" rel="noreferrer noopener nofollow">AnyDesk - Windows</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=hoptodesk.com"> - <a href="https://download.hoptodesk.com/HopToDesk.exe" target="_blank" rel="noreferrer noopener nofollow">HopToDesk - Windows</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=avast.com"> - <a href="http://www.avast.com/pt-br/download-thank-you.php?product=FAV-OFFLINE&amp;locale=pt-br" target="_blank" rel="noreferrer noopener nofollow">Avast OFFLINE</a> - <a href="https://www.avast.com/pt-br/installation-files#pc" target="_blank" rel="noreferrer noopener nofollow">Avast Todos OFFLINE</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=chromium.woolyss.com"> - <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit" target="_blank" rel="noreferrer noopener nofollow">Ungoogled 64</a> | <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/32bit" target="_blank" rel="noreferrer noopener nofollow">Ungoogled 32</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=chromium.woolyss.com"> - <a href="https://chromium.woolyss.com/download/" target="_blank" rel="noreferrer noopener nofollow">Chromium</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=ventoy.net"> - <a href="https://www.ventoy.net/en/download.html" target="_blank" rel="noreferrer noopener nofollow">Ventoy</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=cutepdf.com"> - <a href="https://www.cutepdf.com/download/CuteWriter.exe" target="_blank" rel="noreferrer noopener nofollow">CutePDF Writer</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=greatis.com"> - <a href="https://www.greatissoftware.com/stopupdates10.zip" target="_blank" rel="noreferrer noopener nofollow">StopUpdates10</a></li>					
+						<li><img src="http://www.google.com/s2/favicons?domain=notepad-plus-plus.org"> - <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noreferrer noopener nofollow">NotePad++</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=copyhandler.com"> - <a href="http://www.copyhandler.com/download" target="_blank" rel="noreferrer noopener nofollow">CopyHandler</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sumatrapdfreader.org"> - <a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html" target="_blank" rel="noreferrer noopener nofollow">SumatraPDF</a> - <a href="http://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-64-install.exe" target="_blank" rel="noreferrer noopener nofollow">SumatraPDF 64</a> - <a href="http://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2.zip" target="_blank" rel="noreferrer noopener nofollow">Portable 32</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=okular.kde.org"> - <a href="https://okular.kde.org/pt-br/download/" target="_blank" rel="noreferrer noopener nofollow">OkularPDF - Downloads</a> - <a href="https://cdn.kde.org/ci-builds/graphics/okular/master/windows/" target="_blank" rel="noreferrer noopener nofollow">Okular Windows</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=adobe.com"> - <a href="https://get.adobe.com/br/reader/" target="_blank" rel="noreferrer noopener nofollow">Acrobat Reader</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://ftp.mozilla.org/pub/firefox/" target="_blank" rel="noreferrer noopener nofollow">FireFox FTP Releases</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=mozilla.org"> - <a href="http://www.mozilla.org/en-US/firefox/organizations/" target="_blank" rel="noreferrer noopener nofollow">FireFox ESR</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=voidtools.com"> - <a href="https://www.voidtools.com/" target="_blank" rel="noreferrer noopener nofollow">Everything</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=microsoft.com"> - <a href="http://go.microsoft.com/fwlink/?linkid=2108834&amp;Channel=Stable&amp;language=pt-br" target="_blank" rel="noreferrer noopener nofollow">Edge Chromium 64</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=bb.com.br"> - <a href="https://www14.bancobrasil.com.br/bbsmartcard/bb_modulo_assinatura_x64.exe" target="_blank" rel="noreferrer noopener nofollow">Modulo Assinatura BB</a> | <a href="https://cloud.gastecnologia.com.br/bb/downloads/diagnostico/DiagnosticoBB.exe" target="_blank" rel="noreferrer noopener nofollow">Modulo de Seguranca BB</a></li>
+						<li><img src="http://internetbanking.caixa.gov.br/favicon.ico"> - <a href="http://imagem.caixa.gov.br/banner/fgr/iGBPCEFgb.exe" target="_blank" rel="noreferrer noopener nofollow">CAIXA Internet Explorer</a> | <a href="http://imagem.caixa.gov.br/banner/fgr/iGBPCEFwr.exe" target="_blank" rel="noreferrer noopener nofollow">CAIXA Chrome, Firefox, Opera</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=earth.google.com"> - <a href="https://support.google.com/earth/answer/168344?hl=pt#zippy=%2Cdownload-a-google-earth-pro-direct-installer" target="_blank" rel="noreferrer noopener nofollow">Google Earth Pro</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=decider.com"> - <a href="https://decider.com/" target="_blank" rel="noreferrer noopener nofollow">Decider</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=acritica.net"> - <a href="http://www.acritica.net/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">A Critica</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=agazetanews.com.br"> - <a href="https://www.agazetanews.com.br/" target="_blank" rel="noreferrer noopener nofollow">AGazetaNews</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=agenciabrasil.ebc.com.br"> - <a href="https://agenciabrasil.ebc.com.br/" target="_blank" rel="noreferrer noopener nofollow">agenciabrasil.ebc.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=agorams.com.br"> - <a href="https://www.agorams.com.br/" target="_blank" rel="noreferrer noopener nofollow">agorams.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=bbc.com"> - <a href="https://www.bbc.com/portuguese" target="_blank" rel="noreferrer noopener nofollow">bbc.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=blank"> - <a href="https://oestadoonline.com.br/" target="_blank" rel="noreferrer noopener nofollow">O Estado Online</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=bol.uol.com.br"> - <a href="https://www.bol.uol.com.br/noticias/" target="_blank" rel="noreferrer noopener nofollow">bol.uol.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=brasildefato.com.br"> - <a href="https://www.brasildefato.com.br/" target="_blank" rel="noreferrer noopener nofollow">brasildefato.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=brasilparalelo.com.br"> - <a href="https://www.brasilparalelo.com.br/" target="_blank" rel="noreferrer noopener nofollow">brasilparalelo.com.br</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=campogrande.ms.gov.br"> - <a href="http://www.campogrande.ms.gov.br/cgnoticias/noticias/" target="_blank" rel="noreferrer noopener nofollow">Campo Grande</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=campograndenews.com.br"> - <a href="http://www.campograndenews.com.br/ultimas-noticias" target="_blank" rel="noreferrer noopener nofollow">Campo Grande News</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=campograndenoticias.com.br"> - <a href="https://www.campograndenoticias.com.br/" target="_blank" rel="noreferrer noopener nofollow">Campo Grande Noticias</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=capitalnews.com.br"> - <a href="http://www.capitalnews.com.br/ultimas-noticias" target="_blank" rel="noreferrer noopener nofollow">Capital News</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=cartacapital.com.br"> - <a href="https://www.cartacapital.com.br/" target="_blank" rel="noreferrer noopener nofollow">cartacapital.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=correiodoestado.com.br"> - <a href="https://correiodoestado.com.br/" target="_blank" rel="noreferrer noopener nofollow">correiodoestado.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=correiodoms.com.br"> - <a href="https://www.correiodoms.com.br/category/noticias/" target="_blank" rel="noreferrer noopener nofollow">Correio Do MS</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=diariomsnews.com.br"> - <a href="https://diariomsnews.com.br/" target="_blank" rel="noreferrer noopener nofollow">Diario MS News</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=enfoquems.com.br"> - <a href="http://www.enfoquems.com.br/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">Enfoque MS</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=estadao.com.br"> - <a href="https://www.estadao.com.br/" target="_blank" rel="noreferrer noopener nofollow">Estad o</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=extra.globo.com"> - <a href="https://extra.globo.com/" target="_blank" rel="noreferrer noopener nofollow">extra.globo.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=extranewsms.com.br"> - <a href="http://www.extranewsms.com.br/" target="_blank" rel="noreferrer noopener nofollow">Extra News MS</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=exame.com"> - <a href="https://exame.com/" target="_blank" rel="noreferrer noopener nofollow">Exame</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=folhacg.com.br"> - <a href="http://www.folhacg.com.br/" target="_blank" rel="noreferrer noopener nofollow">Folha CG</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=g1.globo.com"> - <a href="http://g1.globo.com/" target="_blank" rel="noreferrer noopener nofollow">G1</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=gazetadopantanal.com"> - <a href="https://gazetadopantanal.com/" target="_blank" rel="noreferrer noopener nofollow">Gazeta do Pantanal</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=gazetadopovo.com.br"> - <a href="https://www.gazetadopovo.com.br/" target="_blank" rel="noreferrer noopener nofollow">gazetadopovo.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=globo.com"> - <a href="https://www.globo.com/" target="_blank" rel="noreferrer noopener nofollow">globo.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=hojemais.com.br"> - <a href="https://www.hojemais.com.br/campo-grande/noticias/1" target="_blank" rel="noreferrer noopener nofollow">Hoje Mais</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=infocoms.com.br"> - <a href="https://infocoms.com.br/noticias-cidades/41" target="_blank" rel="noreferrer noopener nofollow">In Foco MS</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=jd1noticias.com"> - <a href="http://www.jd1noticias.com/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">JD1 Noticias</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=jornaldoonibusms.com.br"> - <a href="https://jornaldoonibusms.com.br/" target="_blank" rel="noreferrer noopener nofollow">Jornal Do Onibus MS</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=jovempan.com.br"> - <a href="https://jovempan.com.br/noticias" target="_blank" rel="noreferrer noopener nofollow">JovemPan</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=sempreupdate.com.br"> - <a href="https://sempreupdate.com.br/" target="_blank" rel="noreferrer noopener nofollow">sempreupdate.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sordum.org"> - <a href="http://www.sordum.org/" target="_blank" rel="noreferrer noopener nofollow">sordum.org</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techcrunch.com"> - <a href="http://techcrunch.com" target="_blank" rel="noreferrer noopener nofollow">techcrunch.comgadgets</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techhive.com"> - <a href="http://www.techhive.com/" target="_blank" rel="noreferrer noopener nofollow">techhive.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techradar.com"> - <a href="http://www.techradar.com/" target="_blank" rel="noreferrer noopener nofollow">techradar.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techspot.com"> - <a href="http://www.techspot.com/" target="_blank" rel="noreferrer noopener nofollow">techspot.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=tecnoblog.net"> - <a href="https://tecnoblog.net/" target="_blank" rel="noreferrer noopener nofollow">tecnoblog.net</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=telegraph.co.uk"> - <a href="http://www.telegraph.co.uk/technology/news/" target="_blank" rel="noreferrer noopener nofollow">telegraph.co.uk</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=visualdicas.blogspot.com.br"> - <a href="http://visualdicas.blogspot.com.br/" target="_blank" rel="noreferrer noopener nofollow">visualdicas.blogspot.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=wired.com"> - <a href="https://www.wired.com/" target="_blank" rel="noreferrer noopener nofollow">wired.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=zergnet.com"> - <a href="http://zergnet.com/" target="_blank" rel="noreferrer noopener nofollow">zergnet.com</a></li>
+					</ul>
+				</td>
+				<td style="vertical-align: top; width: 415px;">
+					<ul>
+						<li><img src="http://www.google.com/s2/favicons?domain=comss.ru"> - <a href="http://www.comss.ru/download/page.php?id=604" target="_blank" rel="noreferrer noopener nofollow">AV Uninstall Tools Pack</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=ccleaner.com"> - <a href="http://www.ccleaner.com/ccleaner/download/standard" target="_blank" rel="noreferrer noopener nofollow">CCleaner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=ccleaner.com"> - <a href="http://www.ccleaner.com/speccy/download/standard" target="_blank" rel="noreferrer noopener nofollow">Speccy</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=drp.su"> - <a href="http://download.drp.su/17-online/DriverPack-17-Online.exe" target="_blank" rel="noreferrer noopener nofollow">DriverPack OnLine</a></li>
+						<li><img src="http://www.codecguide.com/mpc_logo.png" width="16" height="16"> - <a href="http://www.codecguide.com/download_k-lite_codec_pack_mega.htm" target="_blank" rel="noreferrer noopener nofollow">K-Lite Mega</a></li>
+						<li><img src="http://www.codecguide.com/mpc_logo.png" width="16" height="16"> - <a href="http://www.codecguide.com/download_other.htm#videolan" target="_blank" rel="noreferrer noopener nofollow">VLC VideoLan</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=teamviewer.com"> - <a href="http://download.teamviewer.com/full" target="_blank" rel="noreferrer noopener nofollow">TeamViewer Full</a> - <a href="http://www.teamviewer.com/en/download/previous-versions/" target="_blank" rel="noreferrer noopener nofollow">TeamViewer Versoes Anteriores</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=cpuid.com"> - <a href="http://www.cpuid.com/softwares/cpu-z.html#version-history" target="_blank" rel="noreferrer noopener nofollow">CPU-Z</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=passmark.com"> - <a href="http://www.passmark.com/downloads/rammon.exe" target="_blank" rel="noreferrer noopener nofollow">RAMoon</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=safer-networking.org"> - <a href="http://portableapps.com/apps/security/spybot_portable" target="_blank" rel="noreferrer noopener nofollow">Spybot S&amp;D - Portable</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=malwarebytes.com"> - <a href="http://downloads.malwarebytes.com/file/adwcleaner" target="_blank" rel="noreferrer noopener nofollow">AdwCleaner</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=crystalmark.info"> - <a href="http://crystalmark.info/en/download/#CrystalDiskInfo" target="_blank" rel="noreferrer noopener nofollow">CrystalDiskInfo</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=rcpsoft.net">- <a href="http://rcpsoft.net/pc-total-info/" target="_blank" rel="noreferrer noopener nofollow">PC Total Info</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=reddit.com"> - <a href="https://www.reddit.com/r/TronScript/comments/1d2sbp2/tron_v1207_20240528_remove_sophos_fix/?utm_source=reddit&utm_medium=usertext&utm_name=TronScript&utm_content=t5_34lku" target="_blank" rel="noreferrer noopener nofollow">Tron</a> | <a href="https://mirror.meamod.com/tron/" target="_blank" rel="noreferrer noopener nofollow">Mirror - Tron</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sysinternals.com"> - <a href="http://download.sysinternals.com/files/Autoruns.zip" target="_blank" rel="noreferrer noopener nofollow">Autoruns</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sordum.org">- <a href="http://www.sordum.org/downloads/?st-fix-print-spooler" target="_blank" rel="noreferrer noopener nofollow">Fix Print Spooler</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sordum.org">- <a href="http://www.sordum.org/downloads/?st-defender-control" target="_blank" rel="noreferrer noopener nofollow">Defender Control</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=rufus.ie"> - <a href="http://rufus.ie/" target="_blank" rel="noreferrer noopener nofollow">Rufus</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=windows-repair-toolbox.com"> - <a href="http://windows-repair-toolbox.com/download/click.php?id=Windows_Repair_Toolbox" target="_blank" rel="noreferrer noopener nofollow">Windows Repair Toolbox</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=tcpipmanager.sourceforge.net"> - <a href="http://tcpipmanager.sourceforge.net/download.html" target="_blank" rel="noreferrer noopener nofollow">TCP_IP_Manager</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=irfanview.com"> - <a href="http://download.cnet.com/IrfanView/?part=dl-&amp;subj=dl&amp;tag=button" target="_blank" rel="noreferrer noopener nofollow">IrfanView 32</a> - <a href="http://download.cnet.com/IrfanView-64-bit/3000-2192_4-76444710.html?part=dl-&amp;subj=dl&amp;tag=button" target="_blank" rel="noreferrer noopener nofollow">IrfanView 64</a> - <a href="http://www.irfanview.net/lang/irfanview_lang_portuguese.exe" target="_blank" rel="noreferrer noopener nofollow">IrfanView pt-BR</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=privazer.com"> - <a href="http://privazer.com/PrivaZer.exe" target="_blank" rel="noreferrer noopener nofollow">PrivaZer</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/ConditionalException/Windows10Privacy/releases" target="_blank" rel="noreferrer noopener nofollow">Windows 10 Privacy Utility - 24/02/19</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/ElPumpo/Win10Clean/releases" target="_blank" rel="noreferrer noopener nofollow">Win10Clean v1.0.0 - <b><i>05/02/21</i></b></a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=github.com"> - <a href="http://github.com/hellzerg/optimizer/releases" target="_blank" rel="noreferrer noopener nofollow">Windows 10 Optmizer 10.0 - <b><i>14/09/21</i></b></a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=midiamax.com.br"> - <a href="https://midiamax.com.br/" target="_blank" rel="noreferrer noopener nofollow">Midiamax</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=midianewscampogrande.com.br"> - <a href="https://midianewscampogrande.com.br/index.php/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">Midia News Campo Grande</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=msemfoco.com.br"> - <a href="https://www.msemfoco.com.br/ultimas-noticias" target="_blank" rel="noreferrer noopener nofollow">MS Em Foco</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=msnoticias.com.br"> - <a href="http://www.msnoticias.com.br/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">MS Noticias</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=news.google.com"> - <a href="https://news.google.com/" target="_blank" rel="noreferrer noopener nofollow">news.google.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=noticias.r7.com"> - <a href="https://noticias.r7.com/" target="_blank" rel="noreferrer noopener nofollow">R7</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=odia.ig.com.br"> - <a href="https://odia.ig.com.br/" target="_blank" rel="noreferrer noopener nofollow">odia.ig.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=perfilnews.com.br"> - <a href="http://www.perfilnews.com.br/" target="_blank" rel="noreferrer noopener nofollow">Perfil News</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=cnnbrasil.com.br"> - <a href="https://www.cnnbrasil.com.br/" target="_blank" rel="noreferrer noopener nofollow">CNN Brasil</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=iclnoticias.com.br"> - <a href="https://iclnoticias.com.br/" target="_blank" rel="noreferrer noopener nofollow">ICL Noticias</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=progresso.com.br"> - <a href="https://www.progresso.com.br/" target="_blank" rel="noreferrer noopener nofollow">progresso.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=rcn67.com.br"> - <a href="http://www.rcn67.com.br/cbn/campo-grande/" target="_blank" rel="noreferrer noopener nofollow">Radio CBN - Campo Grande</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=sonoticiaboa.com.br"> - <a href="https://www.sonoticiaboa.com.br/" target="_blank" rel="noreferrer noopener nofollow">sonoticiaboa.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=terra.com.br"> - <a href="http://www.terra.com.br/" target="_blank" rel="noreferrer noopener nofollow">Terra</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=topmidianews.com.br"> - <a href="http://www.topmidianews.com.br/ultimas-noticias/" target="_blank" rel="noreferrer noopener nofollow">Top Midia News</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=uol.com.br"> - <a href="http://www.uol.com.br/" target="_blank" rel="noreferrer noopener nofollow">UOL</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=veja.abril.com.br"> - <a href="https://veja.abril.com.br/" target="_blank" rel="noreferrer noopener nofollow">Veja</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=convergenciadigital.com.br"> - <a href="http://www.convergenciadigital.com.br/" target="_blank" rel="noreferrer noopener nofollow">Convergencia Digital</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=gizmodo.uol.com.br"> - <a href="http://gizmodo.uol.com.br/" target="_blank" rel="noreferrer noopener nofollow">Gizmodo</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=inovacaotecnologica.com.br"> - <a href="http://www.inovacaotecnologica.com.br/" target="_blank" rel="noreferrer noopener nofollow">Inovacao Tecnologica</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=mundoconectado.com.br"> - <a href="http://mundoconectado.com.br/" target="_blank" rel="noreferrer noopener nofollow">Mundo Conectado</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techtudo.com.br"> - <a href="http://www.techtudo.com.br/" target="_blank" rel="noreferrer noopener nofollow">Tech Tudo</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=9gag.com"> - <a href="https://9gag.com/" target="_blank" rel="noreferrer noopener nofollow">9gag.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=articles.informer.com"> - <a href="https://articles.informer.com/" target="_blank" rel="noreferrer noopener nofollow">articles.informer.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=arstechnica.com"> - <a href="http://arstechnica.com/" target="_blank" rel="noreferrer noopener nofollow">arstechnica.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=askbobrankin.com"> - <a href="http://askbobrankin.com/" target="_blank" rel="noreferrer noopener nofollow">askbobrankin.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=betanews.com"> - <a href="http://betanews.com/" target="_blank" rel="noreferrer noopener nofollow">betanews.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=billmullins.wordpress.com"> - <a href="http://billmullins.wordpress.com/" target="_blank" rel="noreferrer noopener nofollow">billmullins.wordpress.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=canaltech.com.br"> - <a href="http://canaltech.com.br/" target="_blank" rel="noreferrer noopener nofollow">canaltech.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=dangerousminds.net"> - <a href="https://dangerousminds.net/" target="_blank" rel="noreferrer noopener nofollow">dangerousminds.net</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=digitalcitizen.life"> - <a href="http://www.digitalcitizen.life/" target="_blank" rel="noreferrer noopener nofollow">digitalcitizen.life</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=dottech.org"> - <a href="http://dottech.org/" target="_blank" rel="noreferrer noopener nofollow">dottech.org</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=dowdandassociates.com"> - <a href="http://www.dowdandassociates.com/" target="_blank" rel="noreferrer noopener nofollow">dowdandassociates.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=edivaldobrito.com.br"> - <a href="https://www.edivaldobrito.com.br/" target="_blank" rel="noreferrer noopener nofollow">edivaldobrito.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=en.taiwebs.com"> - <a href="https://en.taiwebs.com/" target="_blank" rel="noreferrer noopener nofollow">en.taiwebs.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=engadget.com"> - <a href="http://www.engadget.com/" target="_blank" rel="noreferrer noopener nofollow">engadget.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=geek.com"> - <a href="http://www.geek.com/" target="_blank" rel="noreferrer noopener nofollow">geek.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=geekersmagazine.com"> - <a href="http://www.geekersmagazine.com/" target="_blank" rel="noreferrer noopener nofollow">geekersmagazine.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=ghacks.net"> - <a href="http://www.ghacks.net/" target="_blank" rel="noreferrer noopener nofollow">ghacks.net</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=gizmag.com"> - <a href="http://www.gizmag.com/" target="_blank" rel="noreferrer noopener nofollow">gizmag.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=hongkiat.com"> - <a href="http://www.hongkiat.com" target="_blank" rel="noreferrer noopener nofollow">hongkiat.comblog</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=imgbox.com"> - <a href="https://imgbox.com/" target="_blank" rel="noreferrer noopener nofollow">imgbox.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=instantfundas.com"> - <a href="http://www.instantfundas.com/" target="_blank" rel="noreferrer noopener nofollow">instantfundas.com</a></li>
+						<br>
+						<li><img src="http://www.google.com/s2/favicons?domain=karanpc.com"> - <a href="https://karanpc.com/posts/" target="_blank" rel="noreferrer noopener nofollow">karanpc.composts</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=lifehacker.com"> - <a href="http://lifehacker.com/" target="_blank" rel="noreferrer noopener nofollow">lifehacker.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=listoffreeware.com"> - <a href="http://listoffreeware.com/" target="_blank" rel="noreferrer noopener nofollow">listoffreeware.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=makeuseof.com"> - <a href="http://www.makeuseof.com/" target="_blank" rel="noreferrer noopener nofollow">makeuseof.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=mentalfloss.com"> - <a href="https://www.mentalfloss.com/" target="_blank" rel="noreferrer noopener nofollow">mentalfloss.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=neowin.net"> - <a href="http://www.neowin.net/" target="_blank" rel="noreferrer noopener nofollow">neowin.net</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=olhardigital.uol.com.br"> - <a href="http://olhardigital.uol.com.br/" target="_blank" rel="noreferrer noopener nofollow">olhardigital.uol.com.br</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=online-tech-tips.com"> - <a href="http://www.online-tech-tips.com/" target="_blank" rel="noreferrer noopener nofollow">online-tech-tips.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=pcmag.com"> - <a href="http://www.pcmag.com/" target="_blank" rel="noreferrer noopener nofollow">pcmag.comnews</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=techjunkie.com"> - <a href="https://www.techjunkie.com/" target="_blank" rel="noreferrer noopener nofollow">pcmech.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=pplware.sapo.pt"> - <a href="https://pplware.sapo.pt/" target="_blank" rel="noreferrer noopener nofollow">pplware.sapo.pt</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=ceoexpress.com"> - <a href="https://ceoexpress.com/home" target="_blank" rel="noreferrer noopener nofollow">CEOExpress.com</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=ceoexpress.com"> - <a href="https://ceoexpress.com/newsstand?tab=nc&newsid=25#tbs" target="_blank" rel="noreferrer noopener nofollow">CEOExpress Tecnologia</a></li>
+						<li><img src="http://www.google.com/s2/favicons?domain=tabnews.com.br"> - <a href="https://www.tabnews.com.br/" target="_blank" rel="noreferrer noopener nofollow">TabNews</a></li>
+					</ul>
 				</td>
 			</tr>
-				<tr>
-					<td colspan="3" rowspan="1" style="vertical-align: top; width: 532px;">
-						<p align="center"><iframe src="https://maphub.net/embed_h/BfPprSRiqAmjpbMO?panel=1" style="width: 80%;" frameborder="1" height="600" width="800"></iframe></p>
-					</td>
-				</tr>
-			-->
-            </tbody>
-      </table>
-      <br>
-    </script>
-	<p hidden>
+		</tbody>
+	</table>
+<!-- BOTÃO DISCRETO E TEXTO OCULTO -->
+<div style="text-align:center; margin-top:20px;"><button id="toggleBtn" onclick="toggleTexto()" style=" font-size:10px;padding:2px 6px;opacity:0.3;cursor:pointer;border:1px solid #ccc;background:#f5f5f5;">+</button>	</div>
+<pre id="textoOculto" hidden style="white-space: pre-wrap;text-align: justify;font-family: Arial;font-size: 13px;line-height: 1.4;padding: 10px;border: 1px solid #ccc;background: #f8f8f8;">
 		/opt/firebird/bin/gfix -z
 		:: ATIVACAO DO WINDOWS E OFFICE (No PowerShell como admin)
 		irm https://massgrave.dev/get | iex   
@@ -286,18 +327,14 @@
 		& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1")))
 		
 		:: DEBLOTAWARE (No PowerShell como admin)
-		
 		iwr -useb https://git.io/debloat | iex
 		
 		:: ATIVAR MODO DESEMPENHO MAXIMO (CMD admin)
-		
 		powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-		
 		Painel de controle - Op  es de energia - Escolha o modo "Desempenho M ximo"
 		
 		:: DESATIVAR WINDOWS DEFENDER
 		Reboot into safe mode and run this command:
-		
 		REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend" /v "DependOnService" /t REG_MULTI_SZ /d "RpcSs-DISABLED" /f
 		
 		:: CHAVES PRO:
@@ -307,41 +344,18 @@
 		
 		:: DESATIVAR WINDOWS SEARCH (Executar como ADMIN)
 		services.msc
-		
-		windows search
-		parar
-		desativar
+		windows search -> parar -> desativar
 		
 		:: DESATIVAR APPS EM SEGUNDO PLANO NO Windows 11 Pro (Executar como ADMIN)
-		
 		gpedit.msc
-		
-		Configura  o do Computador 
-		Modelos Administrativos
-		Componentes do Windows
-		Privacidade do Aplicativo.
-		
-		"Permitir que aplicativos do Windows sejam executados em segundo plano"
-		
-		Selecione "Habilitado"
-		
-		Em "Padr o para todos os aplicativos", escolha "FOR AR NEGAR"
-		
-		Clique em aplicar e depois em ok.
+		Configura  o do Computador -> Modelos Administrativos -> Componentes do Windows -> Privacidade do Aplicativo.
+		"Permitir que aplicativos do Windows sejam executados em segundo plano" -> Selecione "Habilitado"
+		Em "Padr o para todos os aplicativos", escolha "FOR AR NEGAR" -> Clique em aplicar e depois em ok.
 		
 		:: DESATIVAR NOTIFICACOES E REMOVER ICONE (Executar como ADMIN)
-		
 		gpedit.msc
-		
-		Modelos Administrativos
-		Menu Iniciar e Barra de Tarefas
-		Remover a Central de Acoes e Notificacoes
-		HABILITADO
-		Aplicar
-		OK
-		
+		Modelos Administrativos -> Menu Iniciar e Barra de Tarefas -> Remover a Central de Acoes e Notificacoes -> HABILITADO -> Aplicar -> OK
 		Reinicie o PC.
-		
 		FONTE: https://www.reddit.com/r/Windows11/comments/1d6nrhq/is_there_a_less_painful_way_to_identify_and_turn/?tl=pt-br&rdt=50126
 		
 		:: RECUPERAR MENU DIREITO CLASSICO 
@@ -357,33 +371,41 @@
 		start explorer.exe
 		
 		:: WINDOWSA SERVER EVALUTION PARA FULL
-		
 		Excecutar o CMD como administrador e rodar ios seguintes comandos:
-		
 		DISM /online /Get-CurrentEdition
-		
 		DISM /online /Get-TargetEditions
-		
 		DISM /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula
-		
 		Keys:
 		W269N-WFGWX-YVC9B-4J6C9-T83GX
 		TVRH6-WHNXV-R9WG3-9XRFY-MY832
 		
 		:: DISKPART
-		CMD (ADMIN)
-		diskpart
+		CMD (ADMIN) -> diskpart
 		list disk : Lista todos os discos conectados ao computador. 
-		select disk <n mero> : Seleciona o disco desejado para as pr ximas opera  es. 
+		select disk <numero> : Seleciona o disco desejado para as pr ximas opera  es. 
 		list partition : Lista as parti  es existentes no disco selecionado. 
-		select partition <n mero> : Seleciona a parti  o desejada. 
+		select partition <numero> : Seleciona a parti  o desejada. 
 		create partition primary : Cria uma nova parti  o prim ria. 
 		format fs=ntfs quick : Formata a parti  o selecionada com o sistema de arquivos NTFS (formata  o r pida). 
 		ou
 		format fs=fat32 quick : Formata a parti  o selecionada com o sistema de arquivos NTFS (formata  o r pida).
 		assign letter=<letra> : Atribui uma letra de unidade   parti  o selecionada. 
 		clean : Remove todas as parti  es e dados do disco selecionado. 
-		exit : Sai do DiskPart. 
-	<p>
-	</body>
+		exit : Sai do DiskPart.
+</pre><br><br>
+<script>
+	function toggleTexto() {
+		const texto = document.getElementById("textoOculto");
+		const botao = document.getElementById("toggleBtn");
+
+		if (texto.hidden) {
+			texto.hidden = false;
+			botao.innerHTML = "-";
+		} else {
+			texto.hidden = true;
+			botao.innerHTML = "+";
+		}
+	}
+</script>
+</body>
 </html>
